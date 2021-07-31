@@ -3,7 +3,7 @@ public class decryption {
     {
         final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
         cipherText = cipherText.toLowerCase();
-        String plainText = "";
+        StringBuilder plainText = new StringBuilder();
         for (int i = 0; i < cipherText.length(); i++)
         {
             int charPosition = ALPHABET.indexOf(cipherText.charAt(i));
@@ -13,8 +13,8 @@ public class decryption {
                 keyVal = ALPHABET.length() + keyVal;
             }
             char replaceVal = ALPHABET.charAt(keyVal);
-            plainText += replaceVal;
+            plainText.append(replaceVal);
         }
-        return plainText;
+        return plainText.toString();
     }
 }
