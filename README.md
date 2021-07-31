@@ -20,4 +20,4 @@
  - gradle test
  
 ## License
-- Caesar Cipher was released under license [MIT]
+- Caesar Cipher was released under [MIT](license)
