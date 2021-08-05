@@ -1,7 +1,9 @@
 public class decryption {
     private static String decrypt(String cipherText, int shiftKey)
     {
+
         final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
+
         cipherText = cipherText.toLowerCase();
         StringBuilder plainText = new StringBuilder();
         for (int i = 0; i < cipherText.length(); i++)
@@ -16,5 +18,8 @@ public class decryption {
             plainText.append(replaceVal);
         }
         return plainText.toString();
+    }
+    private static boolean convert(String a, int i) {
+        return false;
     }
 }
