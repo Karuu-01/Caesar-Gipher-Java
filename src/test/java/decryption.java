@@ -30,8 +30,20 @@ public class decryption {
         }
 
     @Test
-    public void checkForEncrypt() {
-        String cipherText = null;
+    public void checkForEncryption(){}
+    public String checkForEncrypt() {
+            String plainText = null;
 
+
+            plainText = plainText.toLowerCase();
+            StringBuilder cipherText = new StringBuilder();
+            for (int i = 0; i < plainText.length(); i++) {
+                int charPosition = ALPHABET.indexOf(plainText.charAt(i));
+                int keyVal = (25 + charPosition) % 26;
+                char replaceVal = ALPHABET.charAt(keyVal);
+                cipherText.append(replaceVal);
+            }
+            return cipherText.toString();
+
+        }
     }
-}
