@@ -36,6 +36,13 @@ public class app
         return plainText.toString();
     }
 
-
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the String for Encryption: ");
+        String message = sc.next();
+        System.out.println(encrypt(message));
+        System.out.println(decrypt(encrypt(message)));
+        sc.close();
     }
 }
