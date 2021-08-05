@@ -1,6 +1,6 @@
 import org.junit.Test;
 
-public class decryption {
+public class tests {
     final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
 
     @Test
